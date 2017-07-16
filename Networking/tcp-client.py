@@ -1,6 +1,10 @@
 import socket
+import sys
 
-target_host= "www.google.com"
+if len(sys.argv) > 1:
+        print "Please enter target web-page.";
+
+target_host= sys.argv[1]
 target_port= 80
 
 #Create a socket object
